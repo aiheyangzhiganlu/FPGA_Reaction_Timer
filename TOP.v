@@ -1,4 +1,4 @@
-module keshe(clk,clear,lu,x,win_rate,SEG_switch,SEG,led);//顶层文件
+module TOP(clk,clear,lu,x,win_rate,SEG_switch,SEG,led);//顶层文件
 input clk,clear;
 input [6:0]x; 
 input [1:0]win_rate;
@@ -34,3 +34,4 @@ scan_seg u13(.clk(clk),.clk1k(clk1k),.rst(clear),.lu(lu),.win_rate(win_rate),.le
 .winner(winner),.time1(time1),.time2(time2),.s1(s1),.s2(s2),.store1(store1),.store2(store2),
 .flag(flag),.SEG_switch(SEG_switch),.SEG(SEG));
 endmodule
+
